@@ -1,11 +1,9 @@
-- title: "Home"
-  url: /
-
-- title: "Code"
-  url: /code/
-
-- title: "Protocols"
-  url: /protocols/
-
-- title: "CV" 
-  url: /cv/
+main:
+  - title: "Home"
+    url: /  
+  - title: "Code"
+    url: /code/
+  - title: "Protocols"
+    url: /protocols/
+  - title: "CV"
+    url: /cv/
