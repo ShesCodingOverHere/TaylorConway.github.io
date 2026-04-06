@@ -20,10 +20,6 @@ I am a bioinformatician with a strong foundation in genomics and evolutionary ge
 
 ## Featured Work
 
-### Code
-Custom pipelines for sequence analysis, enrichment testing, and data visualization.  
-👉 [View Code](/code/)
+👉 [View Code]({{ site.baseurl }}/code/)
 
-### Protocols
-Experimental workflows combining behavioral assays with molecular validation.  
-👉 [View Protocols](/protocols/)
+👉 [View Protocols]({{ site.baseurl }}/protocols/)
