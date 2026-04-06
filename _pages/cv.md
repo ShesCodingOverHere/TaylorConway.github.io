@@ -7,7 +7,7 @@ author_profile: true
 
 ## Curriculum Vitae
 
-[Download CV]({{ site.baseurl }}/files/Taylor_Molin_CV.pdf)
+[Download CV]({{ site.baseurl }}/files/ConwayTaylorResume.docx.pdf)
 
 ---
 
