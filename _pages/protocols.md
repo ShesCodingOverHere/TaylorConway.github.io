@@ -1,3 +1,10 @@
+---
+layout: archive
+title: "Protocols"
+permalink: /protocols/
+author_profile: true
+---
+
 ## DNA Extraction and PCR Validation (D. affinis)
 
 **Context:** Validation of mating outcomes in mate choice assays  
