@@ -1,3 +1,10 @@
+---
+layout: single
+title: "Home"
+permalink: /about/
+author_profile: true
+---
+
 Hi, I’m Taylor Conway.
 
 I’m a bioinformatician currently completing my Master’s training, with a focus on genomics and evolutionary genetics. My work integrates computational analysis with experimental design to study genetic variation and its relationship to fitness and reproduction.
