@@ -1,17 +1,10 @@
----
-layout: archive
-title: "Protocols"
-permalink: /protocols/
-author_profile: true
----
-
 ## DNA Extraction and PCR Validation (D. affinis)
 
 **Context:** Validation of mating outcomes in mate choice assays  
 
 - Extracted DNA from individual flies  
 - Amplified diagnostic markers using PCR  
-- Optimized for low-yield samples  
+- Optimized protocol for low-yield samples  
 
 ---
 
