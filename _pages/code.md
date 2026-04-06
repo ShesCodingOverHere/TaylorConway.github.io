@@ -1,10 +1,3 @@
----
-layout: archive
-title: "Code"
-permalink: /code/
-author_profile: true
----
-
 ## Genomics & Sequence Analysis
 
 ### NUMT Enrichment Analysis
@@ -12,7 +5,7 @@ Analysis of nuclear mitochondrial DNA (NUMT) distribution across chromosomes.
 
 - Developed pipeline for chromosome-level enrichment comparison  
 - Calculated enrichment relative to genomic background  
-- Tools: Python, BLAST, R  
+- Tools: Python, BLAST, pandas  
 
 [View Repository](https://github.com/ShesCodingOverHere/TaylorConway)
 
@@ -23,7 +16,7 @@ Analysis of nuclear mitochondrial DNA (NUMT) distribution across chromosomes.
 ### Chromosomal Enrichment Plots
 - Generated clear, publication-quality genomic plots  
 - Focus on interpretability and clean design  
-- Tools: R  
+- Tools: Python (matplotlib)  
 
 ---
 
