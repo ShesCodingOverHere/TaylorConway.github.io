@@ -4,10 +4,26 @@ title: "Home"
 author_profile: true
 ---
 
-Hi, I’m Taylor Conway.
+## Bioinformatics & Genomics
 
-I’m a bioinformatician currently completing my Master’s training, with a focus on genomics and evolutionary genetics. My work integrates computational analysis with experimental design to study genetic variation and its relationship to fitness and reproduction.
+I am a bioinformatician with a strong foundation in genomics and evolutionary genetics, currently completing my Master’s training. My work integrates computational analysis with experimental design to study genetic variation and its relationship to fitness and reproduction.
 
-I have experience working with sequencing data, developing analysis pipelines, and validating results using molecular techniques such as PCR.
+---
 
-This site highlights my code, experimental protocols, and research experience.
+## What I Do
+
+- Analyze sequencing data and genomic variation  
+- Develop reproducible bioinformatics pipelines  
+- Design and validate experiments using molecular techniques (PCR, DNA extraction)  
+
+---
+
+## Featured Work
+
+### Code
+Custom pipelines for sequence analysis, enrichment testing, and data visualization.  
+👉 [View Code](/code/)
+
+### Protocols
+Experimental workflows combining behavioral assays with molecular validation.  
+👉 [View Protocols](/protocols/)
