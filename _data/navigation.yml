@@ -6,4 +6,4 @@ main:
   - title: "Protocols"
     url: /protocols/
   - title: "CV"
-    url: "{{ site.baseurl }}/files/Taylor_Molin_CV.pdf"
+    url: /TaylorConway.github.io/files/Taylor_Molin_CV.pdf
