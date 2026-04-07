@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Population Counts"
-permalink: /files/population_counts/
+permalink: /code/population_counts/
 ---
 
 # Population Mutation Count Analysis
