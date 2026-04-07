@@ -15,7 +15,7 @@ Bioinformatics pipelines and analyses developed during my Master's research in g
 
 Pipeline for identifying and analyzing nuclear mitochondrial DNA (NUMT) insertions across the genome.
 
-[View Code](../code/numt_pipeline/)
+[View Code](https://shescodingoverhere.github.io/TaylorConway.github.io/code/numt_pipeline/)
 
 ---
 
@@ -23,7 +23,7 @@ Pipeline for identifying and analyzing nuclear mitochondrial DNA (NUMT) insertio
 
 Statistical analysis of sperm competition assays, including paternity assignment and reproductive success metrics.
 
-[View Code](../code/spermcompetition_analysis_R/)
+[View Code](https://shescodingoverhere.github.io/TaylorConway.github.io/code/spermcompetition_analysis_R/)
 
 ---
 
@@ -31,7 +31,7 @@ Statistical analysis of sperm competition assays, including paternity assignment
 
 Analysis of genotype frequency dynamics in experimental population cages.
 
-[View Code](../code/XOXY_comp_cages_R/)
+[View Code](https://shescodingoverhere.github.io/TaylorConway.github.io/code/XOXY_comp_cages_R/)
 
 ---
 
@@ -39,7 +39,7 @@ Analysis of genotype frequency dynamics in experimental population cages.
 
 Compares sequencing coverage across genomic regions to identify sex-linked differences.
 
-[View Code](../code/coverage_sex_comparison/)
+[View Code](https://shescodingoverhere.github.io/TaylorConway.github.io/code/coverage_sex_comparison/)
 
 ---
 
@@ -47,7 +47,7 @@ Compares sequencing coverage across genomic regions to identify sex-linked diffe
 
 Generates Circos-style visualizations of NUMT distribution across chromosomes.
 
-[View Code](../code/numt_circos/)
+[View Code](https://shescodingoverhere.github.io/TaylorConway.github.io/code/numt_circos/)
 
 ---
 
@@ -61,7 +61,7 @@ Early bioinformatics and population genomics scripts developed during undergradu
 
 Calculates genetic differentiation (FST) and allele frequency change between populations.
 
-[View Code](../code/FST_deltaP/)
+[View Code](https://shescodingoverhere.github.io/TaylorConway.github.io/code/FST_deltaP/)
 
 ---
 
@@ -69,7 +69,7 @@ Calculates genetic differentiation (FST) and allele frequency change between pop
 
 Computes allele frequencies from genomic data across populations.
 
-[View Code](../code/allele_freqs/)
+[View Code](https://shescodingoverhere.github.io/TaylorConway.github.io/code/allele_freqs/)
 
 ---
 
@@ -77,7 +77,7 @@ Computes allele frequencies from genomic data across populations.
 
 Generates site frequency spectra to characterize genetic variation.
 
-[View Code](../code/sfs/)
+[View Code](https://shescodingoverhere.github.io/TaylorConway.github.io/code/sfs/)
 
 ---
 
@@ -85,7 +85,7 @@ Generates site frequency spectra to characterize genetic variation.
 
 Summarizes variant or genotype counts across samples.
 
-[View Code](../code/population_counts/)
+[View Code](https://shescodingoverhere.github.io/TaylorConway.github.io/code/population_counts/)
 
 ---
 
@@ -93,7 +93,7 @@ Summarizes variant or genotype counts across samples.
 
 Processes gene coordinate data for downstream analysis.
 
-[View Code](../code/genes/)
+[View Code](https://shescodingoverhere.github.io/TaylorConway.github.io/code/genes/)
 
 ---
 
@@ -101,7 +101,7 @@ Processes gene coordinate data for downstream analysis.
 
 Combines haplotype data across samples.
 
-[View Code](../code/combining_haplotypes/)
+[View Code](https://shescodingoverhere.github.io/TaylorConway.github.io/code/combining_haplotypes/)
 
 ---
 
@@ -109,10 +109,12 @@ Combines haplotype data across samples.
 
 Analyzes sequencing depth and mutation support.
 
-[View Code](../code/mutation_depth/)
+[View Code](https://shescodingoverhere.github.io/TaylorConway.github.io/code/mutation_depth/)
 
 ---
 
 ### Tandem Duplication Clustering
 
 Identifies and clusters tandem duplication events.
+
+[View Code](https://shescodingoverhere.github.io/TaylorConway.github.io/code/tandem_dup_clustering/)
