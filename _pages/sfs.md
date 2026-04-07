@@ -1,5 +1,8 @@
 ---
+layout: single
 title: "Site Frequency Spectrum Projection"
+permalink: /code/sfs/
+author_profile: true
 ---
 
 # Site Frequency Spectrum Projection
