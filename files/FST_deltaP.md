@@ -1,5 +1,7 @@
 ---
-title: "Allele Frequency Comparison and FST Calculation"
+layout: single
+title: "FST and Δp Analysis"
+permalink: /files/FST_deltaP/
 ---
 
 # Allele Frequency Comparison and FST Calculation
