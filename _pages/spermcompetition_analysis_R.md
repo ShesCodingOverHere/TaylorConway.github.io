@@ -1,10 +1,17 @@
 ---
-title: "Sperm Competition Analysis Pipeline"
+layout: single
+title: "Sperm Competition Analysis"
+permalink: /code/sperm_competition/
+author_profile: true
 ---
 
-# Sperm Competition Analysis Pipeline
+# Sperm Competition Analysis
 
-This script processes sperm competition datasets, calculates the proportion of offspring sired by the second male, and generates publication-quality plots with statistical comparisons for both XO vs XY and XgY vs XdY experiments.
+This script processes sperm competition datasets to quantify the proportion of offspring sired by the second male (P2). It integrates multiple experimental blocks, computes summary statistics, and generates publication-quality visualizations comparing mating outcomes across genotypes.
+
+The workflow supports two experimental designs:
+- XO vs XY male competition
+- XgY vs XdY male competition
 
 ---
 
@@ -30,9 +37,9 @@ process_file <- function(path, dataset_label) {
   
   df <- df %>%
     mutate(
-      male_total        = m_dark + m_genome,
-      female_total      = f_dark + f_genome,
-      total_offspring   = male_total + female_total
+      male_total      = m_dark + m_genome,
+      female_total    = f_dark + f_genome,
+      total_offspring = male_total + female_total
     )
   
   summary <- df %>%
@@ -60,37 +67,25 @@ process_file <- function(path, dataset_label) {
 }
 
 # =========================
-# Load + combine datasets
+# Load and combine datasets
 # =========================
 files <- tibble::tribble(
   ~path, ~dataset,
-  "data/SpermCompetitionPilot.csv",  "Pilot",
-  "data/SpermCompetitionRound1.csv", "Round 1",
-  "data/SpermCompetitionRound2.csv", "Round 2"
+  "data/input/block1.csv", "Block 1",
+  "data/input/block2.csv", "Block 2",
+  "data/input/block3.csv", "Block 3"
 )
 
-sperm_summary_clean_all <- purrr::map2_dfr(files$path, files$dataset, process_file)
+sperm_summary <- purrr::map2_dfr(files$path, files$dataset, process_file)
 
-# =========================
-# Relabel datasets → Blocks
-# =========================
-sperm_summary_clean_all <- sperm_summary_clean_all %>%
-  mutate(
-    dataset = recode(dataset,
-                     "Pilot"   = "Block 1",
-                     "Round 1" = "Block 2",
-                     "Round 2" = "Block 3"),
-    second_mate = factor(second_mate, levels = c("XO", "XY"))
-  )
+sperm_summary <- sperm_summary %>%
+  mutate(second_mate = factor(second_mate, levels = c("XO", "XY")))
 
-# =========================
-# Filter
-# =========================
-plot_df_main <- sperm_summary_clean_all %>%
+plot_df_main <- sperm_summary %>%
   filter(prop_second_male > 0)
 
 # =========================
-# Stats: XO vs XY
+# Statistical test
 # =========================
 pval_main <- with(plot_df_main, t.test(prop_second_male ~ second_mate)$p.value)
 
@@ -116,32 +111,22 @@ ggplot(plot_df_main,
   geom_jitter(aes(color = dataset),
               width = 0.25,
               alpha = 0.8,
-              size = 3,
-              shape = 16) +
+              size = 3) +
   
-  annotate("segment", x = 1, xend = 2, y = 1.08, yend = 1.08) +
-  annotate("segment", x = 1, xend = 1, y = 1.06, yend = 1.08) +
-  annotate("segment", x = 2, xend = 2, y = 1.06, yend = 1.08) +
-  annotate("text", x = 1.5, y = 1.095, label = p_star_main, size = 5) +
-  
-  scale_color_manual(values = c(
-    "Block 1" = "#1b9e77",
-    "Block 2" = "#d95f02",
-    "Block 3" = "#7570b3"
-  )) +
+  annotate("text", x = 1.5, y = 1.05, label = p_star_main, size = 5) +
   
   labs(
-    title = "P1–P2 Sperm Competition",
+    title = "Sperm Competition (XO vs XY)",
     x = "Second Mate Type",
-    y = "Proportion Females Sired by Second Male",
+    y = "Proportion Sired by Second Male",
     color = "Block"
   ) +
   
-  coord_cartesian(ylim = c(0, 1.12)) +
-  theme_minimal(base_size = 25)
+  coord_cartesian(ylim = c(0, 1.1)) +
+  theme_minimal(base_size = 18)
 
 # =========================
-# XgY vs XdY processing
+# XgY vs XdY analysis
 # =========================
 process_xgy <- function(path) {
   
@@ -152,9 +137,7 @@ process_xgy <- function(path) {
                  "m_dark", "f_dark", "m_genome", "f_genome")
   
   df <- df %>%
-    mutate(
-      female_total = f_dark + f_genome
-    )
+    mutate(female_total = f_dark + f_genome)
   
   summary <- df %>%
     group_by(female, second_mate) %>%
@@ -172,23 +155,18 @@ process_xgy <- function(path) {
     filter(
       !is.na(prop_second_male),
       is.finite(prop_second_male),
-      female_total > 5,
-      !(second_mate == "XgY" & female_genome_total == 0)
+      female_total > 5
     )
   
   return(summary)
 }
 
-xgy1 <- process_xgy("data/XgYvsXdY.csv")
-xgy2 <- process_xgy("data/XgYvsXdY_block2.csv")
+xgy_df <- bind_rows(
+  process_xgy("data/input/xgy_block1.csv"),
+  process_xgy("data/input/xgy_block2.csv")
+)
 
-plot_df_xgy <- bind_rows(xgy1, xgy2) %>%
-  filter(prop_second_male > 0)
-
-# =========================
-# Stats: XgY vs XdY
-# =========================
-pval_xgy <- with(plot_df_xgy, t.test(prop_second_male ~ second_mate)$p.value)
+pval_xgy <- with(xgy_df, t.test(prop_second_male ~ second_mate)$p.value)
 
 p_star_xgy <- ifelse(pval_xgy < 0.001, "***",
                      ifelse(pval_xgy < 0.01, "**",
@@ -197,36 +175,34 @@ p_star_xgy <- ifelse(pval_xgy < 0.001, "***",
 # =========================
 # Plot: XgY vs XdY
 # =========================
-ggplot(plot_df_xgy,
+ggplot(xgy_df,
        aes(x = second_mate,
            y = prop_second_male,
            color = second_mate)) +
   
-  geom_hline(yintercept = 0.5, linetype = "dotted", linewidth = 0.5) +
+  geom_hline(yintercept = 0.5, linetype = "dotted") +
   
-  geom_boxplot(outlier.shape = NA, width = 0.55, fill = NA, size = 1) +
+  geom_boxplot(outlier.shape = NA, width = 0.55, fill = NA) +
+  geom_jitter(width = 0.15, alpha = 0.6, size = 2.5) +
   
-  geom_jitter(width = 0.12, alpha = 0.6, size = 2.6) +
-  
-  annotate("segment", x = 1, xend = 2, y = 1.08, yend = 1.08) +
-  annotate("segment", x = 1, xend = 1, y = 1.06, yend = 1.08) +
-  annotate("segment", x = 2, xend = 2, y = 1.06, yend = 1.08) +
-  annotate("text", x = 1.5, y = 1.095, label = p_star_xgy, size = 5) +
-  
-  scale_color_manual(values = c(
-    "XdY" = "#E69F00",
-    "XgY" = "#56B4E9"
-  ), name = "Genotype") +
-  
-  scale_x_discrete(limits = c("XdY", "XgY")) +
-  
-  coord_cartesian(ylim = c(0, 1.12)) +
+  annotate("text", x = 1.5, y = 1.05, label = p_star_xgy, size = 5) +
   
   labs(
-    title = "P1–P2 Sperm Competition",
+    title = "Sperm Competition (XgY vs XdY)",
     x = "Second Mate Type",
     y = "Proportion Sired by Second Male"
   ) +
   
-  theme_minimal(base_size = 25)
+  coord_cartesian(ylim = c(0, 1.1)) +
+  theme_minimal(base_size = 18)
 ```
+
+---
+
+## Notes
+
+- P2 represents the proportion of offspring sired by the second male  
+- Data are aggregated per female to account for replicate matings  
+- Statistical significance is assessed using a two-sample t-test  
+- Visualization includes both distribution (boxplot) and individual observations (jitter)  
+- Designed for comparing mating success across genetic backgrounds  
