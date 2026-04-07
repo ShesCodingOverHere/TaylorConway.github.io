@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "PacBio HiFi Genome Assembly and Annotation Pipeline"
-permalink: /code/hifi_assembly_pipeline/
+permalink: /code/PacBioHiFiGenomeAssemblyandAnnotationPipeline/
 author_profile: true
 ---
 
