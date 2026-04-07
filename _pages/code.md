@@ -21,7 +21,7 @@ Early bioinformatics and population genomics scripts developed during undergradu
 
 Calculates genetic differentiation (FST) and allele frequency change between populations.
 
-[View Code]({{ site.baseurl }}/files/FST_deltaP.md)
+[View Code]({{ site.baseurl }}/code/FST_deltaP.md)
 
 ---
 
@@ -29,7 +29,7 @@ Calculates genetic differentiation (FST) and allele frequency change between pop
 
 Computes allele frequencies from genomic data across populations.
 
-[View Code]({{ site.baseurl }}/files/allele_freqs.md)
+[View Code]({{ site.baseurl }}/code/allele_freqs.md)
 
 ---
 
@@ -37,7 +37,7 @@ Computes allele frequencies from genomic data across populations.
 
 Generates site frequency spectra to characterize genetic variation.
 
-[View Code]({{ site.baseurl }}/files/sfs.md)
+[View Code]({{ site.baseurl }}/code/sfs.md)
 
 ---
 
@@ -45,7 +45,7 @@ Generates site frequency spectra to characterize genetic variation.
 
 Summarizes variant or genotype counts across samples.
 
-[View Code]({{ site.baseurl }}/files/population_counts.md)
+[View Code]({{ site.baseurl }}/code/population_counts.md)
 
 ---
 
@@ -53,7 +53,7 @@ Summarizes variant or genotype counts across samples.
 
 Processes gene coordinate data for downstream analysis.
 
-[View Code]({{ site.baseurl }}/files/genes.md)
+[View Code]({{ site.baseurl }}/code/genes.md)
 
 ---
 
@@ -61,7 +61,7 @@ Processes gene coordinate data for downstream analysis.
 
 Combines haplotype data across samples.
 
-[View Code]({{ site.baseurl }}/files/combining_haplotypes.md)
+[View Code]({{ site.baseurl }}/code/combining_haplotypes.md)
 
 ---
 
@@ -69,7 +69,7 @@ Combines haplotype data across samples.
 
 Analyzes sequencing depth and mutation support.
 
-[View Code]({{ site.baseurl }}/files/mutation_depth.md)
+[View Code]({{ site.baseurl }}/code/mutation_depth.md)
 
 ---
 
@@ -77,4 +77,4 @@ Analyzes sequencing depth and mutation support.
 
 Identifies and clusters tandem duplication events.
 
-[View Code]({{ site.baseurl }}/files/tandem_dup_clustering.md)
+[View Code]({{ site.baseurl }}/code/tandem_dup_clustering.md)
