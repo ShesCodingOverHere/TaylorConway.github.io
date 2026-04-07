@@ -1,5 +1,8 @@
 ---
+layout: single
 title: "Tandem Duplication Clustering Pipeline"
+permalink: /code/tandem_dup_clustering/
+author_profile: true
 ---
 
 # Tandem Duplication Clustering Pipeline
