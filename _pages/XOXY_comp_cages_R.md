@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "XO/XY Competition Cage Analysis"
-permalink: /code/xoxy_cage_competition/
+title: "XO–XY Competition Cage Analysis"
+permalink: /code/XOXY_comp_cages_R/
 author_profile: true
 ---
 
