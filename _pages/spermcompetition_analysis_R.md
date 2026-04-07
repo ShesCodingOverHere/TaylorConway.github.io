@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Sperm Competition Analysis"
-permalink: /code/sperm_competition/
+permalink: /code/spermcompetition_analysis_R/
 author_profile: true
 ---
 
