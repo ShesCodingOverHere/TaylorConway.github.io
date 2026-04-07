@@ -1,5 +1,7 @@
 ---
-title: "Mutation Depth Calculation Pipeline"
+layout: single
+title: "Mutation Depth Analysis"
+permalink: /files/mutation_depth/
 ---
 
 # Mutation Depth Calculation Pipeline
