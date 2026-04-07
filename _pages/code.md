@@ -5,9 +5,49 @@ permalink: /code/
 author_profile: true
 ---
 
-## Graduate Research (Coming Soon)
+## Graduate Research
 
-Scripts and pipelines developed during my Master's research in genomics and evolutionary genetics.
+Bioinformatics pipelines and analyses developed during my Master's research in genomics and evolutionary genetics.
+
+---
+
+### NUMT Analysis Pipeline
+
+Pipeline for identifying and analyzing nuclear mitochondrial DNA (NUMT) insertions across the genome.
+
+[View Code](../code/numt_pipeline/)
+
+---
+
+### Sperm Competition Analysis (R)
+
+Statistical analysis of sperm competition assays, including paternity assignment and reproductive success metrics.
+
+[View Code](../code/spermcompetition_analysis_R/)
+
+---
+
+### XO–XY Competition Cage Analysis (R)
+
+Analysis of genotype frequency dynamics in experimental population cages.
+
+[View Code](../code/XOXY_comp_cages_R/)
+
+---
+
+### Coverage Comparison by Sex
+
+Compares sequencing coverage across genomic regions to identify sex-linked differences.
+
+[View Code](../code/coverage_sex_comparison/)
+
+---
+
+### NUMT Circos Visualization
+
+Generates Circos-style visualizations of NUMT distribution across chromosomes.
+
+[View Code](../code/numt_circos/)
 
 ---
 
@@ -76,5 +116,3 @@ Analyzes sequencing depth and mutation support.
 ### Tandem Duplication Clustering
 
 Identifies and clusters tandem duplication events.
-
-[View Code](../code/tandem_dup_clustering/)
