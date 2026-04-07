@@ -1,7 +1,8 @@
 ---
 layout: single
 title: "Haplotype Combination"
-permalink: /files/combining_haplotypes/
+permalink: /code/combining_haplotypes/
+author_profile: true
 ---
 
 # Haplotype Integration and Annotation Pipeline
