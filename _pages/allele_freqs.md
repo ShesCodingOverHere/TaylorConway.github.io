@@ -1,7 +1,8 @@
 ---
 layout: single
 title: "Allele Frequency Calculation"
-permalink: /files/allele_freqs/
+permalink: /code/allele_freqs/
+author_profile: true
 ---
 
 # Allele Frequency Calculation
