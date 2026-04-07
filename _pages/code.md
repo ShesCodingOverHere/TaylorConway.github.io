@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: single
 title: "Code"
 permalink: /code/
 author_profile: true
@@ -21,7 +21,7 @@ Early bioinformatics and population genomics scripts developed during undergradu
 
 Calculates genetic differentiation (FST) and allele frequency change between populations.
 
-[View Code](https://shescodingoverhere.github.io/TaylorConway.github.io/code/FST_deltaP/)
+[View Code](../code/FST_deltaP/)
 
 ---
 
@@ -29,7 +29,7 @@ Calculates genetic differentiation (FST) and allele frequency change between pop
 
 Computes allele frequencies from genomic data across populations.
 
-[View Code](https://shescodingoverhere.github.io/TaylorConway.github.io/code/allele_freqs/)
+[View Code](../code/allele_freqs/)
 
 ---
 
@@ -37,7 +37,7 @@ Computes allele frequencies from genomic data across populations.
 
 Generates site frequency spectra to characterize genetic variation.
 
-[View Code](https://shescodingoverhere.github.io/TaylorConway.github.io/code/sfs/)
+[View Code](../code/sfs/)
 
 ---
 
@@ -45,7 +45,7 @@ Generates site frequency spectra to characterize genetic variation.
 
 Summarizes variant or genotype counts across samples.
 
-[View Code](https://shescodingoverhere.github.io/TaylorConway.github.io/code/population_counts/)
+[View Code](../code/population_counts/)
 
 ---
 
@@ -53,7 +53,7 @@ Summarizes variant or genotype counts across samples.
 
 Processes gene coordinate data for downstream analysis.
 
-[View Code](https://shescodingoverhere.github.io/TaylorConway.github.io/code/genes/)
+[View Code](../code/genes/)
 
 ---
 
@@ -61,7 +61,7 @@ Processes gene coordinate data for downstream analysis.
 
 Combines haplotype data across samples.
 
-[View Code](https://shescodingoverhere.github.io/TaylorConway.github.io/code/combining_haplotypes/)
+[View Code](../code/combining_haplotypes/)
 
 ---
 
@@ -69,7 +69,7 @@ Combines haplotype data across samples.
 
 Analyzes sequencing depth and mutation support.
 
-[View Code](https://shescodingoverhere.github.io/TaylorConway.github.io/code/mutation_depth/)
+[View Code](../code/mutation_depth/)
 
 ---
 
@@ -77,4 +77,4 @@ Analyzes sequencing depth and mutation support.
 
 Identifies and clusters tandem duplication events.
 
-[View Code](https://shescodingoverhere.github.io/TaylorConway.github.io/code/tandem_dup_clustering/)
+[View Code](../code/tandem_dup_clustering/)
