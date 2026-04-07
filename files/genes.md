@@ -1,5 +1,7 @@
 ---
-title: "Gene Overlap Classification Pipeline"
+layout: single
+title: "Gene Coordinate Processing"
+permalink: /files/genes/
 ---
 
 # Gene Overlap Classification Pipeline
