@@ -32,6 +32,7 @@ author_profile: true
 - Sequential mating design to quantify relative paternity success (P1 vs P2)  
 - Controlled mating timeline with standardized fly age and conditions  
 - Offspring scored by phenotype to assign paternity and estimate competitive fertilization success  
+
 [Sperm Competition Protocol]({{ site.baseurl }}/files/P1-P2spermcompetition.pdf)
 
 ## XO–XY Competition Cages
