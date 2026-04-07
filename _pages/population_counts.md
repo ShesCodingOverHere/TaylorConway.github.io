@@ -2,6 +2,7 @@
 layout: single
 title: "Population Counts"
 permalink: /code/population_counts/
+author_profile: true
 ---
 
 # Population Mutation Count Analysis
