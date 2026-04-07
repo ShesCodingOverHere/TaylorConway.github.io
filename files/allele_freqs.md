@@ -1,5 +1,7 @@
 ---
-title: "Allele Frequency Calculation Script"
+layout: single
+title: "Allele Frequency Calculation"
+permalink: /files/allele_freqs/
 ---
 
 # Allele Frequency Calculation
