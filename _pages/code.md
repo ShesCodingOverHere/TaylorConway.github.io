@@ -5,94 +5,76 @@ permalink: /code/
 author_profile: true
 ---
 
-# Code from undergrad
+## Graduate Research (Coming Soon)
 
-## Population Genomics & Sequence Analysis
+Scripts and pipelines developed during my Master's research in genomics and evolutionary genetics.
+
+---
+
+## Undergraduate Work
+
+Early bioinformatics and population genomics scripts developed during undergraduate research.
 
 ---
 
 ### FST and Δp Analysis
 
-Calculates genetic differentiation (FST) and allele frequency change (Δp) between populations.
+Calculates genetic differentiation (FST) and allele frequency change between populations.
 
-- Tools: Python  
-
-[View Script]({{ site.baseurl }}/files/FST_deltaP.py)
+[View Code]({{ site.baseurl }}/files/FST_deltaP.md)
 
 ---
 
 ### Allele Frequency Calculation
 
-Computes allele frequencies from sequencing or variant data across populations.
+Computes allele frequencies from genomic data across populations.
 
-- Tools: Python  
-
-[View Script]({{ site.baseurl }}/files/allele_freqs.py)
+[View Code]({{ site.baseurl }}/files/allele_freqs.md)
 
 ---
 
 ### Site Frequency Spectrum (SFS)
 
-Generates site frequency spectra to characterize patterns of genetic variation.
+Generates site frequency spectra to characterize genetic variation.
 
-- Tools: Python  
-
-[View Script]({{ site.baseurl }}/files/sfs.py)
+[View Code]({{ site.baseurl }}/files/sfs.md)
 
 ---
 
 ### Population Counts
 
-Processes genomic data to summarize counts of variants or genotypes across samples.
+Summarizes variant or genotype counts across samples.
 
-- Tools: Python  
-
-[View Script]({{ site.baseurl }}/files/population_counts.py)
-
----
-
-## Sequence Processing & Annotation
+[View Code]({{ site.baseurl }}/files/population_counts.md)
 
 ---
 
 ### Gene Coordinate Processing
 
-Handles gene coordinate data for downstream genomic analysis.
+Processes gene coordinate data for downstream analysis.
 
-- Tools: Python  
-
-[View Script]({{ site.baseurl }}/files/genes.py)
+[View Code]({{ site.baseurl }}/files/genes.md)
 
 ---
 
 ### Haplotype Combination
 
-Combines haplotype data across samples for comparative analysis.
+Combines haplotype data across samples.
 
-- Tools: Python  
-
-[View Script]({{ site.baseurl }}/files/combining_haplotypes.py)
+[View Code]({{ site.baseurl }}/files/combining_haplotypes.md)
 
 ---
 
 ### Mutation Depth Analysis
 
-Analyzes sequencing depth and mutation support across genomic regions.
+Analyzes sequencing depth and mutation support.
 
-- Tools: Python  
-
-[View Script]({{ site.baseurl }}/files/mutation_depth.py)
-
----
-
-## Structural Variation
+[View Code]({{ site.baseurl }}/files/mutation_depth.md)
 
 ---
 
 ### Tandem Duplication Clustering
 
-Identifies and clusters tandem duplication events across the genome.
+Identifies and clusters tandem duplication events.
 
-- Tools: Python  
-
-[View Script]({{ site.baseurl }}/files/tandem_dup_clustering.py)
+[View Code]({{ site.baseurl }}/files/tandem_dup_clustering.md)
