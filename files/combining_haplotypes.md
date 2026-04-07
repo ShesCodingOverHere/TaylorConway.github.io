@@ -1,5 +1,7 @@
 ---
-title: "Haplotype Integration and Annotation Pipeline"
+layout: single
+title: "Haplotype Combination"
+permalink: /files/combining_haplotypes/
 ---
 
 # Haplotype Integration and Annotation Pipeline
