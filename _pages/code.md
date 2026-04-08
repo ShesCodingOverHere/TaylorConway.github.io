@@ -57,3 +57,10 @@ Early bioinformatics and population genomics scripts developed during undergradu
 
 ### Tandem Duplication Clustering
 [View Code](/TaylorConway.github.io/code/tandem_dup_clustering/)
+
+
+## Code Repository
+
+Full codebase available on GitHub:
+
+[View Full Repository](https://github.com/ShesCodingOverHere/Taylor-Molin-Code)
