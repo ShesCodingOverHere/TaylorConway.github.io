@@ -16,10 +16,3 @@ I am a bioinformatician with a strong foundation in genomics and evolutionary ge
 - Develop reproducible bioinformatics pipelines  
 - Design and validate experiments using molecular techniques (PCR, DNA extraction)  
 
----
-
-## Featured Work
-
-👉 [View Code]({{ site.baseurl }}/code/)
-
-👉 [View Protocols]({{ site.baseurl }}/protocols/)
