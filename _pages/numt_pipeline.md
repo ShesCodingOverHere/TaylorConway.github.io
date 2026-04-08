@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "NUMTs Detection and Analysis Pipeline"
-permalink: /code/numts_pipeline/
+permalink: /code/numt_pipeline/
 author_profile: true
 ---
 
