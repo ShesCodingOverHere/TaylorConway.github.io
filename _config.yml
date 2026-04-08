@@ -30,11 +30,11 @@ author:
   email            : "tdmc253@gmail.com"
 
   # Repositories and software development
-  github           : "academicpages"
+  github           : "https://github.com/ShesCodingOverHere/Taylor-Molin-Code"
   
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # "bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
