@@ -43,7 +43,9 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : <a href="https://www.linkedin.com/in/taylorconway2/">
+  linkedin         : <a href="https://www.linkedin.com/in/taylorconway2/" target="_blank">
+  <img src="images/linkedin.png" alt="LinkedIn">
+</a>
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
