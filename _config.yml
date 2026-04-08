@@ -30,7 +30,7 @@ author:
   email            : "tdmc253@gmail.com"
 
   # Repositories and software development
-  github           : # "https://github.com/ShesCodingOverHere/TaylorConwayCode/"
+  github           : <a href="https://github.com/ShesCodingOverHere/TaylorConwayCode/">
   
   # Social media
   artstation       : # Username
@@ -43,7 +43,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "https://www.linkedin.com/in/taylorconway2/"
+  linkedin         : <a href="https://www.linkedin.com/in/taylorconway2/">
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
